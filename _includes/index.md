@@ -21,6 +21,7 @@
               <li><a href="/developers/tutorials/player-apps">Getting Started With Player App Development</a></li>
               <li><a href="https://github.com/scalainc/exp-cli">Using EXP CLI</a></li>
               <li><a href="https://github.com/scalainc/exp-app-boilerplates">Example Player Applications</a></li>
+              <li><a href="/developers/tutorials/usingfeeds">Getting Started With Feeds</a></li>
             </ul>
           </div>
         </div>
@@ -32,6 +33,7 @@
               <li><a href="/developers/guides/local-app-development">Local App Development</a></li>
               <li><a href="/developers/guides/real-time-communication">Real Time Communication</a></li>
               <li><a href="/developers/guides/data">The Data API</a></li>
+              <li><a href="/developers/guides/feeds">Feeds</a></li>
             </ul>
           </div>
         </div>
