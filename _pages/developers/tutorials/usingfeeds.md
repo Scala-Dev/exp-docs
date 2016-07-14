@@ -80,13 +80,13 @@ Alternative the modules can also be `downloaded` by hand and included, or `CDN` 
 </head>
 <body style="width: 100%;height: 100%;background-color: antiquewhite" ng-controller="rssDataController">
 <div style="width: 80%;margin: 0 auto">
-    <h1> {{ provider }} </h1>
+    <h1> { { provider } } </h1>
     <div style="width: 100%;border-top: solid;border-top-width: thin"></div>
 </div>
 <div style="width: 80%;margin: 0 auto;overflow: auto">
     <div style="width: 100%;margin: 0 auto" ng-repeat="item in rssItems">
-        <h3> {{ item.title }} </h3>
-        {{ item.text }}
+        <h3> { { item.title } } </h3>
+        { { item.text } }
         <div style="width: 100%;border-top: solid;border-top-width: thin;border-top-color: lightgray"></div>
     </div>
 </div>
