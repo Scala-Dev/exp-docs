@@ -7,7 +7,7 @@ tags: []
 ---
 
 # Overview
-`HTML Apps` may require `third party data` integration, think of POS or News information. 
+`HTML Apps` may require `third party data` integrations, think of POS data or News information. 
 The `EXP platform` provides a variety of third party connectors called `FEEDS`.
 This tutorial will show you, how to set up a `FEED` in the `EXP platform` and integrate the data returned in a Angular HTML app.
 
