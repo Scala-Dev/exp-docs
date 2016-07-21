@@ -24,9 +24,9 @@ We `unified` the data sources as much if possible to a `simple Json format`, thi
 
 # Integration
 Most of the `FEEDS` in the `EXP platform` require permissions to access the online `third party` data source. 
-The `EXP platform` has a integration section to select what online data source is to be used. 
-Here the required `credentials` can be entered and will be stored under the used `organisation`. 
-Each user of this `organisation` will have access to these `integrations`.
+The `EXP platform` has an integration section that allows authenticating each online data source. 
+Here the required `credentials` can be associated with an `organization`. 
+Each user of this `organization` will have access to these `integrations`.
 
 ![Data Source Integration](/common_images/developers/integrations.png "Data Source Integration")
 
@@ -38,10 +38,6 @@ Each user of this `organisation` will have access to these `integrations`.
 - Enter `credentials` and `accept`. 
 
 - The `integrations` page will appear again. 
-
-When the `integration` fails a `error message` will appear.
- 
-![Data Source Integration](/common_images/developers/integration_error.png "Data Source Integration Error")
 
 When the `integration` is successful added it's `registered` under configured `integrations`.
 
@@ -91,8 +87,8 @@ We can list them by category:
 3. `Generic` -> no integration
 
 # FEEDS
-When the `integrations` are added to the `EXP platform` `FEEDS` can be created in the `FEEDS` section.
-In here the default view is a list of `FEEDS` already created. Icons will show what `type` of `FEED` is defined. 
+After `integrations` are added to the `EXP platform` `FEEDS` can be created in the `FEEDS` section.
+In here, the default view is a list of `FEEDS` already created. Icons will show what `type` of `FEED` is defined. 
 Other info like `created`, `modified` and `search` is also displayed in this view.
 
 ![Feed](/common_images/developers/feed.png "Feed")
@@ -102,8 +98,8 @@ Other info like `created`, `modified` and `search` is also displayed in this vie
 
 ![Feed](/common_images/developers/feed_add.png "Adding New Feed")
 
-- When `ADD` feed is selected a popup box appears. A valid unique `name` can be entered and a `FEED` type can be selected. A list appears of `integrations` if required.
-Depending on what `FEED` is selected multiple options can be entered like `search`, `max items` and more. The `details` of these fields will be highlighted later in this `guide`. 
+- When `ADD` is selected a popup box appears. A unique `name` must be entered and a `FEED` type can be selected. A list appears of `integrations` if required.
+Depending on what `FEED` is selected multiple options can be entered like `search`, `max number of results` and more. The `details` of these fields will be highlighted later in this `guide`. 
 
 - When done press the `SAVE` button.
 
@@ -117,7 +113,7 @@ When a `FEED` is created and added to the list a `preview` of the data can be ge
 
 ![Feed](/common_images/developers/feed_preview.png "Feed Preview Button")
 
-- A dialog opens to show the preview data in `Json` format. 
+- A dialog opens to show the preview data in `JSON` format. 
 - The `data` can be downloaded pressing the `DOWNLOAD` button in the bottom right corner.
 
 ![Feed](/common_images/developers/feed_data.png "Feed Preview Data")
@@ -187,7 +183,7 @@ OR
 `Max Number of Results` (required): enter the amount of rows that needs to be collected.
 
 ### Weather
-`City, Zip, or Place` (required): enter the location information to search for weather results. A combination of City and country can be used. As example: `amsterdam, netherlands` or `new york, united states`  
+`City, Zip, or Place` (required): enter the location information to search for weather results. A US ZIP code, an airport code or the combination of city and country names can be used. For example: `90210`, `EWR`, `amsterdam, netherlands` or `new york, united states`
 
 `Language Code` (optional): enter the language code to translate the weather content. Following languages are supported:
  
@@ -345,9 +341,9 @@ The `items` section is the actual `data` returned from the `FEED` search. Fields
 ```
 
 ## Dynamic Feeds
-In some cases it could be that multiple `FEEDS` are `required`. As example depending on the `location` for `weather information`.
-This can lead to a `large` amount of `FEEDS` in the `EXP platform` making it hard to manage it all. 
-In this case `FEEDS` can be created with the `dynamic` option. All other options can then be send as a `parameter` next to the `UUID` to the `EXP platform` using the `EXP SDK's`. 
+In some cases the search value for a `FEED` is not know prior to requesting the data. For example requesting `weather information` depending on the `location` of a device which may change over time.
+
+In this case `FEEDS` can be created with the `dynamic` option. All other options can then be sent as `parameters` using the `EXP SDK's`.
 
 ### Create Dynamic Feed
 - In the feed section click on the `ADD` button.
