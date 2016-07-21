@@ -8,7 +8,7 @@ tags: []
 
 # Overview
 `Experiences` created in the `EXP platform` may want to include `third party data sources` in some cases.
-The `EXP platform` has a build in data aggregator that simplifies getting data in your `Experiences`.
+The `EXP platform` has built in data connectors that simplify getting data in your `Experiences`.
 We `unified` the data sources as much if possible to a `simple Json format`, this way a app can easily `switch` between sources without being `modified`.
 `FEEDS` can be accessed in a app or via one of the available EXP SDK's.
 
