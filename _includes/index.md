@@ -33,6 +33,7 @@ To that end, EXP provides:
         <li><a href="https://github.com/scalainc/exp-app-boilerplates">See Player Applications Examples</a></li>
         <li><a href="/developers/guides/player-apps">Learn about Player Apps</a></li>
         <li><a href="/developers/guides/local-app-development">Learn about Local App Development</a></li>
+        <li><a href="/developers/tutorials/webhooks">Learn about Web Hooks</a></li>    
       </ul>
   </div>
 </div>

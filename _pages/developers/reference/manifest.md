@@ -212,6 +212,31 @@ A checkbox input for a user to set a value to true or false.
 }
 ```
 
+### configType: slider
+A slider input for a user to set a value.
+
+The slider will snap to increments of size `step`.
+
+```json
+{
+  "configTypes": [
+    {
+      "name": "speed",
+      "type": "slider",
+      "label": "Speed",
+      "step": 5,
+      "min": 0,
+      "max": 200,
+      "path": "speed",
+      "required": true
+    }
+  ],
+  "config": {
+    "speed": 50
+  }
+}
+```
+
 ### configType: content
 A selector for generic content that can be uploaded to EXP. The user can choose to upload a piece of content or choose one from the content tree.
 

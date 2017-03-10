@@ -1,6 +1,6 @@
 ---
 permalink: /developers/guides/feeds
-title: Feeds
+title: Working With Feeds
 keywords: developer, feed, integration, facebook, google, linkedin, instagram, twitter, microsoft, shopify, square, github, weather, bitbucket, rss
 last_updated: July 11, 2016
 tags: []
@@ -332,336 +332,84 @@ Once you've created a feed, you can see what the data it is returning looks like
     <div class="content">
       <table class="language-table">
         <tr>
-          <td>AF</td>
-          <td>Afrikaans</td>
-        </tr>
-        <tr>
-          <td>AR</td>
-          <td>Arabic</td>
-        </tr>
-        <tr>
-          <td>AL</td>
-          <td>Albanian</td>
-        </tr>
-        <tr>
-          <td>HY</td>
-          <td>Armenian</td>
-        </tr>
-        <tr>
-          <td>AZ</td>
-          <td>Azerbaijani</td>
-        </tr>
-        <tr>
-          <td>EU</td>
-          <td>Basque</td>
-        </tr>
-        <tr>
-          <td>BY</td>
-          <td>Belarusian</td>
-        </tr>
-        <tr>
-          <td>BU</td>
-          <td>Bulgarian</td>
-        </tr>
-        <tr>
-          <td>LI</td>
-          <td>British English</td>
-        </tr>
-        <tr>
-          <td>MY</td>
-          <td>Burmese</td>
-        </tr>
-        <tr>
-          <td>CA</td>
-          <td>Catalan</td>
-        </tr>
-        <tr>
-          <td>CN</td>
-          <td>Chinese - Simplified</td>
-        </tr>
-        <tr>
-          <td>TW</td>
-          <td>Chinese - Traditional</td>
-        </tr>
-        <tr>
-          <td>CR</td>
-          <td>Croatian</td>
-        </tr>
-        <tr>
-          <td>CZ</td>
-          <td>Czech</td>
-        </tr>
-        <tr>
-          <td>DK</td>
-          <td>Danish</td>
-        </tr>
-        <tr>
-          <td>DV</td>
-          <td>Dhivehi</td>
-        </tr>
-        <tr>
-          <td>NL</td>
-          <td>Dutch</td>
-        </tr>
-        <tr>
-          <td>EN</td>
+          <td>en</td>
           <td>English</td>
         </tr>
         <tr>
-          <td>EO</td>
-          <td>Esperanto</td>
-        </tr>
-        <tr>
-          <td>ET</td>
-          <td>Estonian</td>
-        </tr>
-        <tr>
-          <td>FA</td>
-          <td>Farsi</td>
-        </tr>
-        <tr>
-          <td>FI</td>
-          <td>Finnish</td>
-        </tr>
-        <tr>
-          <td>FR</td>
-          <td>French</td>
-        </tr>
-        <tr>
-          <td>FC</td>
-          <td>French Canadian</td>
-        </tr>
-        <tr>
-          <td>GZ</td>
-          <td>Galician</td>
-        </tr>
-        <tr>
-          <td>DL</td>
-          <td>German</td>
-        </tr>
-      </table>
-      <table class="language-table">
-        <tr>
-          <td>KA</td>
-          <td>Georgian</td>
-        </tr>
-        <tr>
-          <td>GR</td>
-          <td>Greek</td>
-        </tr>
-        <tr>
-          <td>GU</td>
-          <td>Gujarati</td>
-        </tr>
-        <tr>
-          <td>HT</td>
-          <td>Haitian Creole</td>
-        </tr>
-        <tr>
-          <td>IL</td>
-          <td>Hebrew</td>
-        </tr>
-        <tr>
-          <td>HI</td>
-          <td>Hindi</td>
-        </tr>
-        <tr>
-          <td>HU</td>
-          <td>Hungarian</td>
-        </tr>
-        <tr>
-          <td>IS</td>
-          <td>Icelandic</td>
-        </tr>
-        <tr>
-          <td>IO</td>
-          <td>Ido</td>
-        </tr>
-        <tr>
-          <td>ID</td>
-          <td>Indonesian</td>
-        </tr>
-        <tr>
-          <td>IR</td>
-          <td>Irish Gaelic</td>
-        </tr>
-        <tr>
-          <td>IT</td>
-          <td>Italian</td>
-        </tr>
-        <tr>
-          <td>JP</td>
-          <td>Japanese</td>
-        </tr>
-        <tr>
-          <td>JW</td>
-          <td>Javanese</td>
-        </tr>
-        <tr>
-          <td>KM</td>
-          <td>Khmer</td>
-        </tr>
-        <tr>
-          <td>KR</td>
-          <td>Korean</td>
-        </tr>
-        <tr>
-          <td>KU</td>
-          <td>Kurdish</td>
-        </tr>
-        <tr>
-          <td>LA</td>
-          <td>Latin</td>
-        </tr>
-        <tr>
-          <td>LV</td>
-          <td>Latvian</td>
-        </tr>
-        <tr>
-          <td>LT</td>
-          <td>Lithuanian</td>
-        </tr>
-        <tr>
-          <td>ND</td>
-          <td>Low German</td>
-        </tr>
-        <tr>
-          <td>MK</td>
-          <td>Macedonian</td>
-        </tr>
-        <tr>
-          <td>MT</td>
-          <td>Maltese</td>
-        </tr>
-        <tr>
-          <td>GM</td>
-          <td>Mandinka</td>
-        </tr>
-        <tr>
-          <td>MI</td>
-          <td>Maori</td>
-        </tr>
-        <tr>
-          <td>MR</td>
-          <td>Marathi</td>
-        </tr>
-        <tr>
-          <td>MN</td>
-          <td>Mongolian</td>
-        </tr>
-      </table>
-      <table class="language-table">
-        <tr>
-          <td>NO</td>
-          <td>Norwegian</td>
-        </tr>
-        <tr>
-          <td>OC</td>
-          <td>Occitan</td>
-        </tr>
-        <tr>
-          <td>PS</td>
-          <td>Pashto</td>
-        </tr>
-        <tr>
-          <td>GN</td>
-          <td>Plautdietsch</td>
-        </tr>
-        <tr>
-          <td>PL</td>
-          <td>Polish</td>
-        </tr>
-        <tr>
-          <td>BR</td>
-          <td>Portuguese</td>
-        </tr>
-        <tr>
-          <td>PA</td>
-          <td>Punjabi</td>
-        </tr>
-        <tr>
-          <td>RO</td>
-          <td>Romanian</td>
-        </tr>
-        <tr>
-          <td>RU</td>
+          <td>ru</td>
           <td>Russian</td>
         </tr>
         <tr>
-          <td>SR</td>
-          <td>Serbian</td>
+          <td>it</td>
+          <td>Italian</td>
         </tr>
         <tr>
-          <td>SK</td>
-          <td>Slovak</td>
-        </tr>
-        <tr>
-          <td>SL</td>
-          <td>Slovenian</td>
-        </tr>
-        <tr>
-          <td>SP</td>
+          <td>es</td>
           <td>Spanish</td>
         </tr>
         <tr>
-          <td>SI</td>
-          <td>Swahili</td>
+          <td>ua</td>
+          <td>Ukrainian</td>
         </tr>
         <tr>
-          <td>SW</td>
+          <td>de</td>
+          <td>German</td>
+        </tr>
+        <tr>
+          <td>pt</td>
+          <td>Portuguese</td>
+        </tr>
+      </table>
+      <table class="language-table">
+        <tr>
+          <td>ro</td>
+          <td>Romanian</td>
+        </tr>
+        <tr>
+          <td>pl</td>
+          <td>Polish</td>
+        </tr>
+        <tr>
+          <td>fi</td>
+          <td>Finnish</td>
+        </tr>
+        <tr>
+          <td>nl</td>
+          <td>Dutch</td>
+        </tr>
+        <tr>
+          <td>fr</td>
+          <td>French</td>
+        </tr>
+        <tr>
+          <td>bg</td>
+          <td>Bulgarian</td>
+        </tr>
+        <tr>
+          <td>se</td>
           <td>Swedish</td>
         </tr>
+      </table>
+      <table class="language-table">
         <tr>
-          <td>CH</td>
-          <td>Swiss</td>
+          <td>zh_tw</td>
+          <td>Chinese Traditional</td>
         </tr>
         <tr>
-          <td>TL</td>
-          <td>Tagalog</td>
+          <td>zh</td>
+          <td>Chinese Simplified</td>
         </tr>
         <tr>
-          <td>TT</td>
-          <td>Tatarish</td>
-        </tr>
-        <tr>
-          <td>TH</td>
-          <td>Thai</td>
-        </tr>
-        <tr>
-          <td>TR</td>
+          <td>tr</td>
           <td>Turkish</td>
         </tr>
         <tr>
-          <td>TK</td>
-          <td>Turkmen</td>
+          <td>hr</td>
+          <td>Croatian</td>
         </tr>
         <tr>
-          <td>UA</td>
-          <td>Ukranian</td>
-        </tr>
-        <tr>
-          <td>UZ</td>
-          <td>Uzbek</td>
-        </tr>
-        <tr>
-          <td>VU</td>
-          <td>Vietnamese</td>
-        </tr>
-        <tr>
-          <td>CY</td>
-          <td>Welsh</td>
-        </tr>
-        <tr>
-          <td>SN</td>
-          <td>Wolof</td>
-        </tr>
-        <tr>
-          <td>JI</td>
-          <td>Yiddish - transliterated</td>
-        </tr>
-        <tr>
-          <td>YI</td>
-          <td>Yiddish - unicode</td>
+          <td>ca</td>
+          <td>Catalan</td>
         </tr>
       </table>
     </div>
@@ -802,3 +550,8 @@ Once you've created a dynamic feed, you can see what it's like to have dynamic p
 
 ### Exceptions
 There are a couple of feed types not available as dynamic. Currently they are RSS and Generic Endpoint.
+
+## Feed Special Cases
+
+### Calendar Feed "All Day Events"
+When setting up a Microsoft or Google Calendar feed and selecting a All Day event the time and timezone will not be returned in the feed. By design Microsoft and Google are not not returning these values in case of all day events. In this case Clients needs to apply there own timezone. 
