@@ -85,6 +85,9 @@ For types like `feed` that have a subtype of acceptable values, this property is
 ### configType: text
 An input for a simple text message. Its value is a string and in the UI the user will edit it with a text input.
 
+The attribute `pattern` is optional. If supplied, it causes the text element corresponding to this config object to validate
+that its value matches the supplied pattern. It follows the rules of the [browser's pattern matching](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#pattern).
+
 ```json
 {
   "configTypes": [
@@ -93,7 +96,33 @@ An input for a simple text message. Its value is a string and in the UI the user
       "type": "text",
       "label": "Message",
       "path": "userMessage",
-      "required": false
+      "required": false,
+      "pattern": "\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b"
+    }
+  ],
+  "config": {
+    "userMessage": "Default greeting message!"
+  }
+}
+```
+
+### configType: textarea
+Similar to the `text` config type, but it defines a `<textarea>` where the user will enter their text. Textareas are better suited
+than the simple `text` config type if the input is possibly going to have multiple line breaks.
+
+The attribute `rows` is optional. If supplied, it causes the textarea eleemnt corresponding to this config object to generate a `<textarea>`
+of the given height.
+
+```json
+{
+  "configTypes": [
+    {
+      "name": "message",
+      "type": "textarea",
+      "label": "Message",
+      "path": "userMessage",
+      "required": false,
+      "rows": 4
     }
   ],
   "config": {
