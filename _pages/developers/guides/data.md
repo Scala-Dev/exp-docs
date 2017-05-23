@@ -16,9 +16,11 @@ directly by group and key.
 Github `https://github.com/ScalaInc/exp-sales-associate-ipad`
 
 ## Content
+
 The content is host on EXP system under folder Retail App, there is two folders men and women, inside every folder there is two folders categories(basic,business,party,trend) and dashboard (first screen). For each category there is two large image that is show on the left also there is other folder call product_options inside this folder are all the images for the different products.
 
 ## Model
+
 All the information display in the reatail Exp app is comming from EXP, there is a JSON file model that describe how the app is going to behave. You can find this model using swagger `https://api-develop.goexp.io/public/docs/` go to Data API and click on get `api/data/{group}` use `exp_retail` for group and `exp_retail_model` for key.
 
 ```json
@@ -437,9 +439,11 @@ All the information display in the reatail Exp app is comming from EXP, there is
 
 
 ## App Logo
+
 Inside the JSON model `"logo_app": "UUID"` UUID from EXP.
 
 ## App Menu Options
+
 Menu options is and array of Object where each object has a name where is the name display on the top menu and dashboard_images where is the folder with the images for the first page.
 
 ```json
@@ -450,8 +454,8 @@ Menu options is and array of Object where each object has a name where is the na
 ```    
 
 ## App Categories
-Each option(Men,Women) has categories inside(basic,trend,party,business) for each categories we have different products and each product has the description(price,name,description). The `image_detail` property is the image that it will be show if you click in that particular product. 
 
+Each option(Men,Women) has categories inside(basic,trend,party,business) for each categories we have different products and each product has the description(price,name,description). The `image_detail` property is the image that it will be show if you click in that particular product. 
 ```json
 "menu_options": [
           {
@@ -474,6 +478,7 @@ Each option(Men,Women) has categories inside(basic,trend,party,business) for eac
 ```
 
 ## App Beacon Integration
+
   - Add the beacon into EXP system using admin-mobile-app(`https://github.com/ScalaInc/exp-mobile-admin`)
   - Add the beacon to particular location and zone.
   - App Json model you need to add the beacon uuid `"beacon_uuid": "EBEFD083-70A2-47C8-9837-E7B5634DF528"` that you want to range for.
@@ -481,4 +486,5 @@ Each option(Men,Women) has categories inside(basic,trend,party,business) for eac
   `"products": [{"zone_key": "32e838b7-82df-4835-8d4f-9e33aa54cb6f"}`
   
 ## App Fling Integration
+
 Inside each product there is a property call  `"fling_content": "Content UUID"` you need to add the content UUID, if you don't add one it will fling the property `image_detail`.
