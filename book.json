@@ -1,7 +1,7 @@
 {
   "gitbook": "3.2.2",
   "title": "EXP Docs",
-  "plugins": ["edit-link", "prism", "-highlight", "github"],
+  "plugins": ["prism", "-highlight", "github"],
   "pluginsConfig": {
     "fontsettings": {
       "theme": "night",
@@ -12,10 +12,6 @@
       "css": [
         "prismjs/themes/prism-tomorrow.css"
       ]
-    },
-    "edit-link": {
-      "base": "https://github.com/brianfeister/exp-docs/tree/master",
-      "label": "Edit This Page"
     },
     "github": {
       "url": "https://github.com/brianfeister/exp-docs/"
