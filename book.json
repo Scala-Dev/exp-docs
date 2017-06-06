@@ -1,0 +1,23 @@
+{
+  "gitbook": "3.2.2",
+  "title": "EXP Docs",
+  "plugins": ["prism", "-highlight", "github"],
+  "pluginsConfig": {
+    "fontsettings": {
+      "theme": "night",
+      "family": "sans",
+      "size": 2
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    },
+    "github": {
+      "url": "https://github.com/brianfeister/exp-docs/"
+    }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }
+}

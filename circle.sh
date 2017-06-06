@@ -11,7 +11,7 @@ GCLOUD_ZONE=us-east1-d
 DOCKER_HOST=gcr.io
 DOCKER_IMAGE=$DOCKER_HOST/$GCLOUD_PROJECT/$K8S_DEPLOYMENT:${CIRCLE_BRANCH//\//-}-$CIRCLE_BUILD_NUM-$CIRCLE_SHA1
 
-bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 && bundle exec jekyll build
+bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 && bundle exec yarn install && gitbook install && gitbook build
 
 sudo docker build --rm=false -t $DOCKER_IMAGE .
 

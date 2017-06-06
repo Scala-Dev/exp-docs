@@ -1,0 +1,21 @@
+{
+  "name": "exp-docs",
+  "version": "1.1.0",
+  "description": "EXP platform documentation",
+  "main": "./main.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "gitbook install && gitbook --lrport 35730 serve",
+    "build": "gitbook build",
+    "publish:build": "./build-push.sh"
+  },
+  "author": "Father Time <brian@drm.st>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "gitbook": "^3.2.2",
+    "gitbook-cli": "^2.3.0"
+  },
+  "repository": "git@github.com:brianfeister/exp-docs.git"
+}
