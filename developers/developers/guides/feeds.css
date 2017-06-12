@@ -1,0 +1,59 @@
+.icon {
+  margin: 0 !important;
+}
+
+table.language-table {
+  display: inline-block;
+  vertical-align: top;
+}
+table.language-table td {
+  width: 168px;
+}
+table.language-table td:first-child {
+  width: 50px;
+}
+
+/*Related to the table of feed types*/
+.feed-information thead th {
+  text-align: left;
+}
+.feed-information td:first-child {
+  width: 215px;
+}
+.feed-information tbody tr td {
+  vertical-align: middle;
+}
+.category {
+  background-color: #FFFFE0;
+  font-weight: bold;
+}
+.feed-information img {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Make the language table wrapper expandable */
+.expandable > .content {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.expandable > input:checked ~ .content {
+  height: 280px;
+}
+.expandable > input {
+  display: none;
+  visibility: hidden;
+}
+.expandable > label::before {
+  content: 'Show Languages';
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.expandable > input:checked ~ label::before {
+  content: 'Hide';
+}
