@@ -15,4 +15,4 @@ compile:
     - /bin/bash ./circle.sh
 test:
   override:
-    - echo
+    - "true"
