@@ -7,12 +7,10 @@ machine:
     - docker
 dependencies:
   override:
-    - yarn
-  cache_directories:
-    - ~/.cache/yarn
+    - echo
 compile:
   override:
     - /bin/bash ./circle.sh
 test:
   override:
-    - "true"
+    - echo
