@@ -6,6 +6,8 @@ machine:
   services:
     - docker
 dependencies:
+  pre:
+    - gem install bundler
   override:
     - echo
 compile:
