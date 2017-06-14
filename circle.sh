@@ -13,7 +13,6 @@ DOCKER_IMAGE=$DOCKER_HOST/$GCLOUD_PROJECT/$K8S_DEPLOYMENT:${CIRCLE_BRANCH//\//-}
 
 npm install -g gitbook-cli
 gitbook build
-gitbook --port 8001 serve
 
 sudo docker build --rm=false -t $DOCKER_IMAGE .
 
