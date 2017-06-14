@@ -12,6 +12,7 @@ DOCKER_HOST=gcr.io
 DOCKER_IMAGE=$DOCKER_HOST/$GCLOUD_PROJECT/$K8S_DEPLOYMENT:${CIRCLE_BRANCH//\//-}-$CIRCLE_BUILD_NUM-$CIRCLE_SHA1
 
 npm install -g gitbook-cli
+gitbook install
 gitbook build
 
 sudo docker build --rm=false -t $DOCKER_IMAGE .
