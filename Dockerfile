@@ -1,8 +1,6 @@
-FROM billryan/gitbook:base
-MAINTAINER Rhett <yuanbin2014@gmail.com>
+FROM node:6.10
 
-# install gitbook versions
-RUN gitbook fetch latest
+RUN npm install -g gitbook-cli
 
 COPY ./ /exp
 
