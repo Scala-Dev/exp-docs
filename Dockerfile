@@ -1,6 +1,13 @@
-FROM nginx:1.11.10
+FROM node:6.10
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY ./ /usr/share/nginx/html
+RUN npm install -g gitbook-cli
+
+COPY ./ /exp
 
 EXPOSE 8001
+
+WORKDIR /exp
+
+RUN gitbook build
+
+CMD ["gitbook", "--port", "8001", "serve"]
