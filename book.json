@@ -1,7 +1,7 @@
 {
   "gitbook": "3.2.2",
   "title": "EXP Docs",
-  "plugins": ["prism", "-highlight"],
+  "plugins": ["prism", "-highlight", "github"],
   "pluginsConfig": {
     "fontsettings": {
       "theme": "night",
@@ -12,6 +12,9 @@
       "css": [
         "prismjs/themes/prism-tomorrow.css"
       ]
+    },
+    "github": {
+      "url": "https://github.com/ScalaInc/exp-docs/"
     }
   },
   "styles": {
