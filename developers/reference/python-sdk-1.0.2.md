@@ -142,7 +142,7 @@ channel = exp.get_channel('my-consumer-channel', consumer=True)
 
 **`channel.broadcast(name, payload=None, timeout=0.1)`**
 
-Sends a [broadcast](#broadcast) on the channel with the given name and payload and returns a list of responses. `timeout` is the number of seconds to hold the request open to wait for responses.
+Sends a [broadcast](#broadcasts) on the channel with the given name and payload and returns a list of responses. `timeout` is the number of seconds to hold the request open to wait for responses.
 
 ```python
 responses = channel.broadcast('hi!', { 'test': 'nice to meet you!' })
@@ -151,7 +151,7 @@ responses = channel.broadcast('hi!', { 'test': 'nice to meet you!' })
 
 **`channel.listen(name, max_age=60)`**
 
-Returns a [listener](#listener) for events on the channel. `max_age` is the number of seconds the listener will buffer events before they are discarded.
+Returns a [listener](#listeners) for events on the channel. `max_age` is the number of seconds the listener will buffer events before they are discarded.
 
 ```python
 channel = exp.get_channel('my-channel')
@@ -170,14 +170,14 @@ location.get_channel().fling({ 'appTemplate' : { 'uuid': '[uuid'} })
 
 **`channel.identify()`**
 
-Requests that [devices](#device) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
+Requests that [devices](#devices) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
 
 
 ## Listeners
 
 **`listener.wait(timeout=0)`**
 
-Wait for `timeout` seconds for broadcasts. Returns a [broadcast](#broadcasts) if a [broadcast](#broadcasts) is in the queue or if a [broadcast](#broadcasts) is received before the timeout. If timeout is reached, returns `None`. 
+Wait for `timeout` seconds for broadcasts. Returns a [broadcast](#broadcasts) if a [broadcast](#broadcasts) is in the queue or if a [broadcast](#broadcasts) is received before the timeout. If timeout is reached, returns `None`.
 
 ```python
 channel = exp.get_channel('my-channel')
@@ -193,7 +193,7 @@ while True:
 
 **`listener.cancel()`**
 
-Cancels the listener. The listener is unsubscribed from [broadcasts](#broadcast) and will no longer receive messages. This cannot be undone.
+Cancels the listener. The listener is unsubscribed from [broadcasts](#broadcasts) and will no longer receive messages. This cannot be undone.
 
 ## Broadcasts
 
@@ -224,7 +224,7 @@ while True:
 
 Devices inherit all [common resource methods and attributes](#resources).
 
-**`exp.get_device(uuid=None)`** 
+**`exp.get_device(uuid=None)`**
 
 Returns the device with the given uuid or `None` if no device could be found.
 

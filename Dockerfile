@@ -1,6 +1,6 @@
 FROM nginx:1.11.10
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY ./_book /usr/share/nginx/www/docs
+COPY ./ /usr/share/nginx/html
 
 EXPOSE 8001

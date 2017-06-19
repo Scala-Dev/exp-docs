@@ -86,7 +86,7 @@ Starts and returns an sdk instance. Can be called multiple times to start multip
 ```swift
 import ExpSwift
 
-# Init exp connection for device with Host,Uuid,secret. 
+# Init exp connection for device with Host,Uuid,secret.
   ExpSwift.start(host,"74c05552-5b9f-4d06-a3f8-8299ff1e1e3a","7b674d4ab63e80c62591ef3fcb51da1505f420d2a9ffda8ed5d24aa6384ad1c1f10985a4fc858b046b065bcdacc105dd").then{ result -> Void in
             debugPrint(result)
             }.catch { error in
@@ -133,7 +133,7 @@ debugPrint(document!["identity"]);
 debugPrint(document!["identity"]!["username"]);
 ```
 
-**`ExpSwift.on("update",callback)`** 
+**`ExpSwift.on("update",callback)`**
 
 Callback is called when authentication payload is updated.
 
@@ -154,7 +154,7 @@ ExpSwift.on("error", callback: { obj -> Void in
 ## Status
 
 
-**`ExpSwift.connection(name, callback)`** 
+**`ExpSwift.connection(name, callback)`**
 
 Attaches a listener for connection events. The possible events are `online` (when a connection is established to EXP) and `offline` (when the connection to EXP is lost).
 
@@ -163,7 +163,7 @@ Attaches a listener for connection events. The possible events are `online` (whe
 ExpSwift.connection("online", { obj -> Void in
             debugPrint(obj)
         })
-        
+
 ExpSwift.connection("offline", { obj -> Void in
             debugPrint(obj)
         })
@@ -175,16 +175,16 @@ Whether or not you are connected to the network.
 
 
 ## Channels
- 
- **`exp.getChannel(name, system, consumerApp)`** 
- 
+
+ **`exp.getChannel(name, system, consumerApp)`**
+
  Returns a channel with the given name with two flags: `consumerApp` and `system`. Consumer devices can only listen and broadcast on consumer channels. System channels are listen only and can receive broadcasts about system events.
- 
+
 ```swift
     let channel = ExpSwift.getChannel("my-channel",system: false,consumerApp: true)
 ```
 
-**`channel.broadcast(name, payload, timeout)`** 
+**`channel.broadcast(name, payload, timeout)`**
 
 Sends a broadcast with given `name` and `payload` on the channel. Waits for responses for `timeout` milliseconds and resolves with an array of responses.
 
@@ -195,7 +195,7 @@ Sends a broadcast with given `name` and `payload` on the channel. Waits for resp
     }
 ```
 
-**`channel.listen(name, callback)`** 
+**`channel.listen(name, callback)`**
 
 Registers a [listener](#listeners) callback for events on the channel with the given `name`. Resolves to a [listener](#listeners) when the callback is registered and the network connection has subscribed to the channel.
 
@@ -220,7 +220,7 @@ Call the `respond` method to send a response back to the broadcaster whith a `pa
     }
 ```
 
-**`channel.fling(payload)`** 
+**`channel.fling(payload)`**
 
 Fling an app launch payload on the channel.
 
@@ -731,7 +731,7 @@ ExpSwift.getContent("root").then { (content: Content) -> Void  in
 
 **`ExpSwift.findContent(params:[String:Any])`**
 
-Query for multiple content . Resolves to a SearchResults object containing [Content](   #content).
+Query for multiple content . Resolves to a SearchResults object containing [Content](#content).
 
 ```swift
 ExpSwift.findContent(["limit":10, "skip":0, "sort":"name", "name":"images"]).then { (data: SearchResults<Content>) -> Void  in

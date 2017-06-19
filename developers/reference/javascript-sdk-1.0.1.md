@@ -72,7 +72,7 @@ exp = EXP.start({ uuid: '[uuid]', apiKey: '[api-key]' });
 
 ## Stopping the SDK
 
-**`EXP.stop()`** 
+**`EXP.stop()`**
 
 Stops all running instance of the sdk, cancels all listeners and closes socket connections.
 
@@ -101,9 +101,9 @@ Resolves to the current authentication payload. The authentication payload may b
 
 Returns the current authentication payload. Will be null if not yet authenticated.
 
-**`exp.on('update',callback)`** 
+**`exp.on('update',callback)`**
 
-Callback is called when authentication payload is updated. Returns a [listener](#listener).
+Callback is called when authentication payload is updated. Returns a [listener](#listeners).
 
 
 **`exp.on('error',callback)`**
@@ -129,9 +129,9 @@ Cancels the registered callback. This operation cannot be undone.
 ## Status
 
 
-**`exp.on('offline',callback)`** 
+**`exp.on('offline',callback)`**
 
-Callback is called when connection to EXP is lost. Returns a [listener](#listener).
+Callback is called when connection to EXP is lost. Returns a [listener](#listeners).
 
 
 **`exp.on('online',callback)`**
@@ -144,17 +144,17 @@ Whether or not you are connected to EXP.
 
 
 ## Channels
- 
- **`exp.getChannel(name, options)`** 
- 
+
+ **`exp.getChannel(name, options)`**
+
  Returns a channel with the given name and options. Options is a javascript object with two flags: `consumer` and `system`. Consumer devices can only listen and broadcast on consumer channels. System channels are listen only and can receive broadcasts about system events.
- 
+
 ```javascript
 channel = exp.getChannel('my-consumer-channel', { consumer: true })
 ```
- 
- 
-**`channel.broadcast(name, payload, timeout)`** 
+
+
+**`channel.broadcast(name, payload, timeout)`**
 
 Sends a broadcast with given `name` and `payload` on the channel. Waits for responses for `timeout` milliseconds and resolves with an array of responses.
 
@@ -165,7 +165,7 @@ channel.broadcast('hi!', { test: 'nice to meet you!' }).then(responses => {
 ```
 
 
-**`channel.listen(name, callback)`** 
+**`channel.listen(name, callback)`**
 
 Registers a [listener](#listeners) callback for events on the channel with the given `name`. Resolves to a [listener](#listeners) when the callback is registered and the connection has subscribed to the channel.
 
@@ -179,7 +179,7 @@ channel.listen('myEvent', (payload, respond) => {
 ```
 
 
-**`channel.fling(payload)`** 
+**`channel.fling(payload)`**
 
 Fling an app launch payload on the channel.
 ```javascript
@@ -188,7 +188,7 @@ channel.fling({ appTemplate: { uuid: '[uuid]' } });
 
 **`channel.identify()`**
 
-Requests that [devices](#device) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
+Requests that [devices](#devices) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
 
 
 # API
@@ -197,15 +197,15 @@ Requests that [devices](#device) listening for this event on this channel visual
 
 Devices inherit all [common resource methods and attributes](#resources).
 
-**`exp.getDevice(uuid)`** 
+**`exp.getDevice(uuid)`**
 
 Resolves to the device with the given uuid or `null` if the device could be found.
 
-**`exp.createDevice(document)`** 
+**`exp.createDevice(document)`**
 
 Resolves to a device created based on the supplied document.
 
-**`exp.findDevices(params)`** 
+**`exp.findDevices(params)`**
 
 Resolves to an array of devices matching the given query parameters. `params` is a map of query parameters.
 
@@ -213,7 +213,7 @@ Resolves to an array of devices matching the given query parameters. `params` is
 exp.createDevice({ subtype: 'scala:device:player' }).then(device => {});
 ```
 
-**`exp.getCurrentDevice()`** 
+**`exp.getCurrentDevice()`**
 
 Resolves to the current device or null if not a device.
 
@@ -281,7 +281,7 @@ Resolves to an experience created based on the supplied document.
 
 Returns a list of experiences matching the given query parameters. `params` is a map of query parameters.
 
-**`exp.getCurrentExperience()`** 
+**`exp.getCurrentExperience()`**
 
 Resolves to the current experience or null.
 
@@ -306,7 +306,7 @@ Resolves to a location created based on the supplied document.
 
 Resolves to an array of locations matching the given query parameters. `params` is a dictionary of query parameters.
 
-**`exp.getCurrentLocation()`** 
+**`exp.getCurrentLocation()`**
 
 Resolves to the current location or null.
 
@@ -331,7 +331,7 @@ Returns a url pointing to the location's layout image.
 
 Zones inherit the [common resource methods and attributes](#resources) `save()`, `refresh()`, and `getChannel()`.
 
-**`exp.getCurrentZones()`** 
+**`exp.getCurrentZones()`**
 
 Resolves to the current zones or an empty array.
 

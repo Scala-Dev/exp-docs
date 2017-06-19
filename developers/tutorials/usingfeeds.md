@@ -13,7 +13,7 @@ This tutorial will show how to set up a feed in the EXP platform and integrate t
 
 # RSS HTML APP
 As a example on how feed integrations works, we are going to create an Angular JS HTML App that will pull Facebook postings from the EXP platform.
-This `Angular HTML App` will run in a EXP player and will use the [EXP Player APP SDK](/developers/reference/player-app-sdk) to get the Facebook data form the EXP platform.
+This `Angular HTML App` will run in a EXP player and will use the [EXP Player APP SDK](/developers/reference/player-app-sdk.md) to get the Facebook data form the EXP platform.
 For more info on the `EXP SDK's`, please check the [Developer Guide - Reference](#more-resources).
 
 ## Setup Feed
@@ -23,7 +23,7 @@ In the EXP platform we are going to setup a Facebook feed that will pull posting
 
 - Click the `Facebook` icon to create a integration. Follow the onscreen instructions, you have to enter valid facebook credentials.
 
-![tutorial](/common_images/tutorials/feed_tutorial_1.png "feed tutorial 1")
+![tutorial](/images/tutorials/feed_tutorial_1.png "feed tutorial 1")
 
 - After you've successfully authorized and granted permission to EXP, click on `Feeds` in the menu on the left.
 
@@ -39,14 +39,14 @@ In the EXP platform we are going to setup a Facebook feed that will pull posting
 
 - Click the `SAVE` button.
 
-![tutorial](/common_images/tutorials/feed_tutorial_2.png "feed tutorial 2")
+![tutorial](/images/tutorials/feed_tutorial_2.png "feed tutorial 2")
 
 - Select the `FEED` and click on the `PREVIEW` button to test the `FEED`.
 
-![tutorial](/common_images/tutorials/feed_tutorial_3.png "feed tutorial 3")
+![tutorial](/images/tutorials/feed_tutorial_3.png "feed tutorial 3")
 
 ## EXP player SDK
-The [EXP Player APP SDK](/developers/reference/player-app-sdk) will automatically be injected into all HTML apps running on an EXP player.
+The [EXP Player APP SDK](/developers/reference/player-app-sdk.md) will automatically be injected into all HTML apps running on an EXP player.
 The EXP player fires a Javascript `load` function when the `SDK` is loaded.
 From here the `SDK` can be accessed using the `exp` object.
 For example getting configuration information: `exp.app.config`.
@@ -442,7 +442,7 @@ To get the Angular HTML App running in EXP you have to preform a couple of steps
 
 - Select `Upload App Template`.
 
-![Uploading an App](/common_images/tutorials/feed_tutorial_6.png "feed tutorial 6")
+![Uploading an App](/images/tutorials/feed_tutorial_6.png "feed tutorial 6")
 
 - When you save this the Template is available in the `EXP platform`.
 
@@ -452,13 +452,13 @@ To get the Angular HTML App running in EXP you have to preform a couple of steps
 
 - Click on `App settings` button and set the properties.
 
-![Uploading an App](/common_images/tutorials/feed_tutorial_7.png "feed tutorial 7")
+![Uploading an App](/images/tutorials/feed_tutorial_7.png "feed tutorial 7")
 
 - Add a `Player` and setup a `scheduling`.
 
 When running the `Angular HTML app` you should be able to see a result like this:
 
-![Uploading an App](/common_images/tutorials/feed_tutorial_5.png "feed tutorial 5")
+![Uploading an App](/images/tutorials/feed_tutorial_5.png "feed tutorial 5")
 
 # Conclusion
 That’s it! You have now learned the basics of how to `integrate FEED data` using the `EXP Player SDK`.
@@ -466,10 +466,10 @@ You can download the finished demo application here: [facebookApp](https://githu
 
 Scala offers a List of `SDK's` for multiple program languages:
 
-- [Python SDK - Reference](/developers/reference/python-sdk)
+- [Python SDK - Reference](/developers/reference/python-sdk.md)
 
-- [Player app SDK - Reference](/developers/reference/player-app-sdk)
+- [Player app SDK - Reference](/developers/reference/player-app-sdk.md)
 
-- [IOS SDK - Reference](/developers/reference/ios-sdk)
+- [IOS SDK - Reference](/developers/reference/ios-sdk.md)
 
-- [Android SDK - Reference](/developers/reference/android-sdk)
+- [Android SDK - Reference](/developers/reference/android-sdk.md)

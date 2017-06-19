@@ -106,7 +106,7 @@ Returns the current authentication payload. Will be null if not yet authenticate
 
 **`exp.on('update',callback)`**
 
-Callback is called when authentication payload is updated. Returns a [listener](#listener).
+Callback is called when authentication payload is updated. Returns a [listener](#listeners).
 
 
 **`exp.on('error',callback)`**
@@ -134,7 +134,7 @@ Cancels the registered callback. This operation cannot be undone.
 
 **`exp.on('offline',callback)`**
 
-Callback is called when connection to EXP is lost. Returns a [listener](#listener).
+Callback is called when connection to EXP is lost. Returns a [listener](#listeners).
 
 
 **`exp.on('online',callback)`**
@@ -207,7 +207,7 @@ channel.fling({ content: '[url]' });
 
 **`channel.identify()`**
 
-Requests that [devices](#device) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
+Requests that [devices](#devices) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
 
 
 # API

@@ -149,7 +149,7 @@ channel = exp.get_channel('my-consumer-channel', consumer=True)
 
 **`channel.broadcast(name, payload=None, timeout=0.1)`**
 
-Sends a [broadcast](#broadcast) on the channel with the given name and payload and returns a list of responses. `timeout` is the number of seconds to hold the request open to wait for responses.
+Sends a [broadcast](#broadcasts) on the channel with the given name and payload and returns a list of responses. `timeout` is the number of seconds to hold the request open to wait for responses.
 
 ```python
 responses = channel.broadcast('hi!', { 'test': 'nice to meet you!' })
@@ -158,7 +158,7 @@ responses = channel.broadcast('hi!', { 'test': 'nice to meet you!' })
 
 **`channel.listen(name, timeout=10, max_age=60)`**
 
-Returns a [listener](#listener) for events on the channel. `timeout` is how many seconds to wait for the channel to open. `max_age` is the number of seconds the listener will buffer events before they are discarded. If `timeout` is reached before the channel is opened, a `NetworkError` will be raised.
+Returns a [listener](#listeners) for events on the channel. `timeout` is how many seconds to wait for the channel to open. `max_age` is the number of seconds the listener will buffer events before they are discarded. If `timeout` is reached before the channel is opened, a `NetworkError` will be raised.
 
 ```python
 channel = exp.get_channel('my-channel')
@@ -177,7 +177,7 @@ location.get_channel().fling({ 'appTemplate' : { 'uuid': '[uuid'} })
 
 **`channel.identify()`**
 
-Requests that [devices](#device) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
+Requests that [devices](#devices) listening for this event on this channel visually identify themselves. Implementation is device specific; this is simply a convience method.
 
 
 ## Listeners
@@ -200,7 +200,7 @@ while True:
 
 **`listener.cancel()`**
 
-Cancels the listener. The listener is unsubscribed from [broadcasts](#broadcast) and will no longer receive messages. This cannot be undone.
+Cancels the listener. The listener is unsubscribed from [broadcasts](#broadcasts) and will no longer receive messages. This cannot be undone.
 
 ## Broadcasts
 
@@ -231,11 +231,11 @@ while True:
 
 Devices inherit all [common resource methods and attributes](#resources).
 
-**`exp.get_device(uuid=None)`** 
+**`exp.get_device(uuid=None)`**
 
 Returns the device with the given uuid or `None` if no device could be found.
 
-**`exp.get_current_device()`** 
+**`exp.get_current_device()`**
 
 Returns the current device or `None` if not applicable.
 
@@ -305,7 +305,7 @@ Experiences inherit all [common resource methods and attributes](#resources).
 
 Returns the experience with the given uuid or `None` if no experience could be found.
 
-**`exp.get_current_experience()`** 
+**`exp.get_current_experience()`**
 
 Returns the current experience or `None`.
 
@@ -329,7 +329,7 @@ Locations inherit all [common resource methods and attributes](#resources).
 
 Returns the location with the given uuid or `None` if no location could be found.
 
-**`exp.get_current_location()`** 
+**`exp.get_current_location()`**
 
 Returns the current location or `None`.
 
@@ -362,7 +362,7 @@ Returns a url pointing to the location's layout image.
 ## Zones
 Zones inherit the [common resource methods and attributes](#resources) `save()`, `refresh()`, and `get_channel()`.
 
-**`exp.get_current_zones()`** 
+**`exp.get_current_zones()`**
 
 Returns a list of the current zones or an empty list.
 

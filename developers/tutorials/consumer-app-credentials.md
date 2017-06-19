@@ -40,10 +40,10 @@ From this dialog you can copy and paste the uuid and API Key into your app's cod
 
 For the details of how to use these to authenticate your app, see the reference guide for your platform.
 
-* [Python SDK]({{site.baseurl}}/developers/reference/python-sdk#starting-the-sdk)
-* [Javascript SDK]({{site.baseurl}}/developers/reference/javascript-sdk#starting-the-sdk)
-* [iOS SDK]({{site.baseurl}}/developers/reference/ios-sdk#starting-the-sdk)
-* [Android SDK]({{site.baseurl}}/developers/reference/android-sdk#starting-the-sdk)
+* [Python SDK](/developers/reference/python-sdk.md#starting-the-sdk)
+* [Javascript SDK](/developers/reference/javascript-sdk.md#starting-the-sdk)
+* [iOS SDK](/developers/reference/ios-sdk.md#starting-the-sdk)
+* [Android SDK](/developers/reference/android-sdk.md#starting-the-sdk)
 
 You can also click Reset API Key in this form to change the API Key value. All devices running the app that has the old value will no longer be able
 to connect to EXP.
@@ -58,4 +58,4 @@ https://player.goexp.io/#uuid=7871d45b-9ce3-49be-ab98-8739dfa84693&apiKey=f305a3
 ```
 
 This URL, together with the query parameters specifying an experience and app, will play an EXP player app. For more about player urls see the
-[Player URLs]({{site.baseurl}}/developers/tutorials/player-urls) guide and [Player App SDK reference]({{site.baseurl}}/developers/reference/player-app-sdk#url-parameters).
+[Player URLs](/developers/tutorials/player-urls.md) guide and [Player App SDK reference](/developers/reference/player-app-sdk.md#url-parameters).
