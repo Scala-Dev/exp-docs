@@ -12,7 +12,7 @@ The easiest way to get content onto a screen is to create an experience using th
 An experience is made up of the configuration and scheduling needed for a player to show content.
 
 ## First Things First
-Before we get started, make sure you have access to an EXP player.  The [Scala EXP Player](https://chrome.google.com/webstore/detail/scala-exp-player/effhcaaecikakknjnpmkaojnpfcoblik) is available as a Chrome App in the Chrome Web Store.  
+Before we get started, make sure you have access to an EXP player.  The [Scala EXP Player](https://chrome.google.com/webstore/detail/scala-exp-player/effhcaaecikakknjnpmkaojnpfcoblik) is available as a Chrome App in the Chrome Web Store.
 
 If you're just kicking the tires the easiest way to get to a player is by opening [https://player.goexp.io](https://player.goexp.io) in the [Google Chrome Web Browser](https://www.google.com/chrome/).
 
@@ -38,4 +38,4 @@ That's it! You should now have content playing on your player.
 You can find more information about the player using the hidden player menu by clicking near the bottom left corner of the screen.
 ![Hidden Player Menu](/images/developers/quickstart/player-menu-app.png "Hidden Player Menu")
 
-You're ready to start writing your own custom apps, take a look at the documentation for [Player App Development]({{site.baseurl}}/developers/tutorials/player-apps).
+You're ready to start writing your own custom apps, take a look at the documentation for [Player App Development](/developers/tutorials/player-apps.md).

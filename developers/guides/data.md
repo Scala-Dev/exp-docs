@@ -21,7 +21,7 @@ The content is host on EXP system under folder Retail App, there is two folders 
 
 ## Model
 
-All the information display in the reatail Exp app is comming from EXP, there is a JSON file model that describe how the app is going to behave. You can find this model using swagger `https://api-develop.goexp.io/public/docs/` go to Data API and click on get `api/data/{group}` use `exp_retail` for group and `exp_retail_model` for key.
+All the information display in the reatail Exp app is comming from EXP, there is a JSON file model that describe how the app is going to behave. You can find this model using swagger `api/swagger` go to Data API and click on get `api/data/{group}` use `exp_retail` for group and `exp_retail_model` for key.
 
 ```json
 {
@@ -451,11 +451,11 @@ Menu options is and array of Object where each object has a name where is the na
           {
             "name": "WOMEN",
             "dashboard_images": "438421a2-9568-4f09-9877-322813fa8be9",
-```    
+```
 
 ## App Categories
 
-Each option(Men,Women) has categories inside(basic,trend,party,business) for each categories we have different products and each product has the description(price,name,description). The `image_detail` property is the image that it will be show if you click in that particular product. 
+Each option(Men,Women) has categories inside(basic,trend,party,business) for each categories we have different products and each product has the description(price,name,description). The `image_detail` property is the image that it will be show if you click in that particular product.
 ```json
 "menu_options": [
           {
@@ -484,7 +484,7 @@ Each option(Men,Women) has categories inside(basic,trend,party,business) for eac
   - App Json model you need to add the beacon uuid `"beacon_uuid": "EBEFD083-70A2-47C8-9837-E7B5634DF528"` that you want to range for.
   - Add the zone key UUID into the JSON model for the particular product that you want the beacon to change the content
   `"products": [{"zone_key": "32e838b7-82df-4835-8d4f-9e33aa54cb6f"}`
-  
+
 ## App Fling Integration
 
 Inside each product there is a property call  `"fling_content": "Content UUID"` you need to add the content UUID, if you don't add one it will fling the property `image_detail`.

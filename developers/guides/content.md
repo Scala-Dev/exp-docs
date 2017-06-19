@@ -14,13 +14,13 @@ importantly there are specific types of content that make up an experiences. Her
 
 - Content can be any type of file.
 - Content is arranged in a hierarchy of folders.
-- [Apps](/developers/guides/player-apps) are a specific type of content.
+- [Apps](/developers/guides/player-apps.md) are a specific type of content.
 - URLs can be used as content (think bookmarks).
 - Files are processed after upload to provide additional data for App development.
 
 # Navigating the Content Tree
 
-Content for each organization is arranged in a tree.  The base level of the tree is the root folder.  
+Content for each organization is arranged in a tree.  The base level of the tree is the root folder.
 The root folder is a special folder that cannot be deleted. The uuid property of the root folder is
 always `root` and the name of the folder is the same as the organization name (not the display name).
 
@@ -69,13 +69,13 @@ Content can be any of the following four subtypes:
 
 ## Folders
 
-Folders have the subtype `scala:content:folder`.  Just like a local filesystem a folder 
+Folders have the subtype `scala:content:folder`.  Just like a local filesystem a folder
 is used to group content items in a hierarchical tree.
 
 ## Files
 
-Files have the subtype `scala:content:file`. The content repository allows upload of any file type.  
-Files have a `size` and `mimeType` property to help with filtering or handling different media types in your apps. 
+Files have the subtype `scala:content:file`. The content repository allows upload of any file type.
+Files have a `size` and `mimeType` property to help with filtering or handling different media types in your apps.
 
 The SDKs provide a helper function `content.getUrl()` that returns a delivery URL that can be used to include assets in your apps.
 
@@ -92,50 +92,50 @@ if (file.document.mimeType.indexOf('image/') ===  0) {
 ### Properties
 All file types are post-processed to create properties. Every file is given an `md5`, `sha1` and `sha256` checksum.
 
-| File Type        | Properties                                                      | 
-|------------------|-----------------------------------------------------------------| 
-| image/jpeg       | dimensions, exif latitude, exif longitude                       | 
-| image/png        | dimensions                                                      | 
-| image/gif        | dimensions                                                      | 
-| image/x-ms-bmp   | dimensions                                                      | 
-| image/tiff       | dimensions, exif latitude, exif longitude                       | 
-| video/mpeg       | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/mp4        | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/x-m4v      | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/quicktime  | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/x-flv      | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/x-matroska | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/x-ms-wmv   | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/webm       | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/ogg        | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| video/3gpp       | dimensions, exif latitude, exif longitude, duration, frame rate | 
-| audio/mpeg       | duration                                                        | 
+| File Type        | Properties                                                      |
+|------------------|-----------------------------------------------------------------|
+| image/jpeg       | dimensions, exif latitude, exif longitude                       |
+| image/png        | dimensions                                                      |
+| image/gif        | dimensions                                                      |
+| image/x-ms-bmp   | dimensions                                                      |
+| image/tiff       | dimensions, exif latitude, exif longitude                       |
+| video/mpeg       | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/mp4        | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/x-m4v      | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/quicktime  | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/x-flv      | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/x-matroska | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/x-ms-wmv   | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/webm       | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/ogg        | dimensions, exif latitude, exif longitude, duration, frame rate |
+| video/3gpp       | dimensions, exif latitude, exif longitude, duration, frame rate |
+| audio/mpeg       | duration                                                        |
 
 ### Variants
 Certain file types are post processed to create alternative variants of different dimensions and formats.
 
-| File Type                               | Variants                                                                             | 
-|-----------------------------------------|--------------------------------------------------------------------------------------| 
-| image/jpeg                              | png thumbnails (100px, 320px, 1080px)                                                | 
-| image/png                               | png thumbnails (100px, 320px, 1080px)                                                | 
-| image/x-ms-bmp                          | png thumbnails (100px, 320px, 1080px)                                                | 
-| image/gif                               | png thumbnails (100px, 320px, 1080px)                                                | 
-| image/tiff                              | png thumbnails (100px, 320px, 1080px)                                                | 
-| image/svg+xml                           | png thumbnails (100px, 320px, 1080px)                                                | 
-| video/x-msvideo                         | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/x-ms-wmv                          | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/x-flv                             | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/x-matroska                        | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/quicktime                         | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/mp4                               | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 | 
-| video/3gpp                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/ogg                               | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 | 
-| video/webm                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 | 
-| video/mpeg                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| video/x-m4v                             | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 | 
-| application/pdf                         | png thumbnails of the first page (100px, 320px, 1080px)                              | 
-| Compositions in application/json format | svg image, png thumbnails (100px, 320px, 1080px)                                     | 
-| application/postscript                  | svg image of first page, png thumbnails of first page (100px, 320px, 1080px)         | 
+| File Type                               | Variants                                                                             |
+|-----------------------------------------|--------------------------------------------------------------------------------------|
+| image/jpeg                              | png thumbnails (100px, 320px, 1080px)                                                |
+| image/png                               | png thumbnails (100px, 320px, 1080px)                                                |
+| image/x-ms-bmp                          | png thumbnails (100px, 320px, 1080px)                                                |
+| image/gif                               | png thumbnails (100px, 320px, 1080px)                                                |
+| image/tiff                              | png thumbnails (100px, 320px, 1080px)                                                |
+| image/svg+xml                           | png thumbnails (100px, 320px, 1080px)                                                |
+| video/x-msvideo                         | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/x-ms-wmv                          | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/x-flv                             | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/x-matroska                        | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/quicktime                         | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/mp4                               | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 |
+| video/3gpp                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/ogg                               | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 |
+| video/webm                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px)                 |
+| video/mpeg                              | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| video/x-m4v                             | png thumbnails of the 60th frame of the video (100px, 320px, 1080px), transcoded mp4 |
+| application/pdf                         | png thumbnails of the first page (100px, 320px, 1080px)                              |
+| Compositions in application/json format | svg image, png thumbnails (100px, 320px, 1080px)                                     |
+| application/postscript                  | svg image of first page, png thumbnails of first page (100px, 320px, 1080px)         |
 
 ## Apps
 
@@ -145,7 +145,7 @@ An app **must** contain an `index.html` file in the root of the app and if there
 
 Considering that apps are really just a special folder, the contents of an app can be traversed in a similar way to walking the tree.
 
-When calling `content.getChildren()` on an app be sure to set the `appContent` parameter to include app children in the results. 
+When calling `content.getChildren()` on an app be sure to set the `appContent` parameter to include app children in the results.
 
 For example:
 

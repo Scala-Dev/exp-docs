@@ -9,7 +9,7 @@ tags: []
 
 # Namespaces
 
-At load time, player apps have access to the global variable `exp`. This is a full running instance of the [javascript SDK](/developers/reference/javascript-sdk), but has two additional namespaces: `exp.app` and `exp.player`. Inside of an application, `exp.app` is a reference to the current app.
+At load time, player apps have access to the global variable `exp`. This is a full running instance of the [javascript SDK](/developers/reference/javascript-sdk.md), but has two additional namespaces: `exp.app` and `exp.player`. Inside of an application, `exp.app` is a reference to the current app.
 
 # URL Paramters
 
@@ -54,7 +54,7 @@ The DOM element wrapping the app.
 exp.app.element.style.visibility = 'hidden';
 
 
-// 
+//
 
 ```
 

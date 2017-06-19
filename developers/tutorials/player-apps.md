@@ -86,7 +86,7 @@ And create a `main.js` file alongside the `index.html` file with the following c
     function play() {
       var message = exp.app.config.message;
       var container = document.getElementById('message-container');
-      
+
       container.innerHTML = message;
     }
 
@@ -123,7 +123,7 @@ The initial state of the config object is being set in the manifest too. We set 
 
 ## 4. Uploading and Testing the App
 The code for the app is now complete. Compress the app directory into a .zip file and upload it as a content item to the content tree.
-After clicking "Upload App", you will be prompted to enter a name and upload the file. 
+After clicking "Upload App", you will be prompted to enter a name and upload the file.
 
 ![Uploading an App](/images/developers/playerApps/uploading_an_app.gif "Uploading an App")
 
@@ -151,4 +151,4 @@ As soon as the device is added we should see the player showing something like:
 # Conclusion
 That's it! You have now learned the basics of how to create an EXP player app.
 
-To learn more about what's possible with an EXP player app, read the documentation for the [EXP Javascript SDK]({{site.baseurl}}/developers/reference/javascript_sdk_reference).
+To learn more about what's possible with an EXP player app, read the documentation for the [EXP Javascript SDK](/developers/reference/javascript-sdk.md).

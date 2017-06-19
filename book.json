@@ -12,9 +12,6 @@
       "css": [
         "prismjs/themes/prism-tomorrow.css"
       ]
-    },
-    "github": {
-      "url": "https://github.com/brianfeister/exp-docs/"
     }
   },
   "styles": {

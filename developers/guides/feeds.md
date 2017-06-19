@@ -6,7 +6,7 @@ last_updated: July 11, 2016
 tags: []
 ---
 
-<link rel="stylesheet" href="{{site.baseurl}}/_pages/developers/guides/feeds.css">
+<link rel="stylesheet" href="/developers/guides/feeds.css">
 
 # Overview
 
@@ -17,15 +17,15 @@ without being modified.
 The feeds can be acessed through a method on your EXP SDK, so consult the reference for your platform below. This guide will have more detail
 about how to use feeds and how they can be configured.
 
-- [JavaScript SDK - Reference]({{site.baseurl}}/developers/reference/javascript-sdk)
+- [JavaScript SDK - Reference](/developers/reference/javascript-sdk.md)
 
-- [Python SDK - Reference]({{site.baseurl}}/developers/reference/python-sdk)
+- [Python SDK - Reference](/developers/reference/python-sdk.md)
 
-- [Player app SDK - Reference]({{site.baseurl}}/developers/reference/player-app-sdk)
+- [Player app SDK - Reference](/developers/reference/player-app-sdk.md)
 
-- [IOS SDK - Reference]({{site.baseurl}}/developers/reference/ios-sdk)
+- [IOS SDK - Reference](/developers/reference/ios-sdk.md)
 
-- [Android SDK - Reference]({{site.baseurl}}/developers/reference/android-sdk)
+- [Android SDK - Reference](/developers/reference/android-sdk.md)
 
 # Integrations
 Most of the feed types in EXP require permissions to access the third party data source.
@@ -554,4 +554,4 @@ There are a couple of feed types not available as dynamic. Currently they are RS
 ## Feed Special Cases
 
 ### Calendar Feed "All Day Events"
-When setting up a Microsoft or Google Calendar feed and selecting a All Day event the time and timezone will not be returned in the feed. By design Microsoft and Google are not not returning these values in case of all day events. In this case Clients needs to apply there own timezone. 
+When setting up a Microsoft or Google Calendar feed and selecting a All Day event the time and timezone will not be returned in the feed. By design Microsoft and Google are not not returning these values in case of all day events. In this case Clients needs to apply there own timezone.

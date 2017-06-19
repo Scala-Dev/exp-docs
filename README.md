@@ -16,12 +16,12 @@ To that end, EXP provides:
 
 ## Building EXP Apps
 
-  * [Learn about Player App Development](/developers/tutorials/player-apps.md) 
-  * [Learn how to use EXP CLI](https://github.com/scalainc/exp-cli) 
-  * [Learn about Manifest.json](/developers/reference/manifest.md) 
-  * [See Player Applications Examples](https://github.com/scalainc/exp-app-boilerplates) 
+  * [Learn about Player App Development](/developers/tutorials/player-apps.md)
+  * [Learn how to use EXP CLI](https://github.com/scalainc/exp-cli)
+  * [Learn about Manifest.json](/developers/reference/manifest.md)
+  * [See Player Applications Examples](https://github.com/scalainc/exp-app-boilerplates)
   * [Learn about Player Apps](/developers/guides/player-apps.md)
-  * [Learn about Local App Development](/developers/guides/local-app-development.md) 
+  * [Learn about Local App Development](/developers/guides/local-app-development.md)
   * [Learn about Web Hooks](/developers/tutorials/webhooks.md)
 
 ## Realtime Communication
