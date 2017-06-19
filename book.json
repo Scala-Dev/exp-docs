@@ -1,7 +1,7 @@
 {
   "gitbook": "3.2.2",
   "title": "EXP Docs",
-  "plugins": ["prism", "-highlight", "github"],
+  "plugins": ["prism", "-highlight"],
   "pluginsConfig": {
     "fontsettings": {
       "theme": "night",
