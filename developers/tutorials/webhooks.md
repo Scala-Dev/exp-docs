@@ -6,7 +6,7 @@ last_updated: March 3, 2017
 tags: []
 ---
 
-<link rel="stylesheet" href="/developers/tutorials/webhooks.css">
+<link rel="stylesheet" href="/docs/developers/tutorials/webhooks.css">
 
 # Overview
 
