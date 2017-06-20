@@ -6,7 +6,7 @@ last_updated: July 11, 2016
 tags: []
 ---
 
-<link rel="stylesheet" href="/developers/guides/feeds.css">
+<link rel="stylesheet" href="/docs/developers/guides/feeds.css">
 
 # Overview
 
