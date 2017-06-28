@@ -14,7 +14,7 @@ An experience is made up of the configuration and scheduling needed for a player
 ## First Things First
 Before we get started, make sure you have access to an EXP player.  The [Scala EXP Player](https://chrome.google.com/webstore/detail/scala-exp-player/effhcaaecikakknjnpmkaojnpfcoblik) is available as a Chrome App in the Chrome Web Store.
 
-If you're just kicking the tires the easiest way to get to a player is by opening [https://player.goexp.io](https://player.goexp.io) in the [Google Chrome Web Browser](https://www.google.com/chrome/).
+If you're just kicking the tires the easiest way to get to a player is by opening [{{ book.urls.player }}]({{ book.urls.player }}) in the [Google Chrome Web Browser](https://www.google.com/chrome/).
 
 
 ## Let's Go!

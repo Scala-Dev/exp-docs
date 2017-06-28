@@ -79,7 +79,7 @@ Starts and returns an sdk instance. Can be called multiple times to start multip
 - `uuid` The uuid of the device or consumer app.
 - `secret` The device secret.
 - `apiKey` The consumer app api key. Required consumer app credential.
-- `host` The api host to authenticate with. Defaults to `https://api.goexp.io`.
+- `host` The api host to authenticate with. Defaults to `{{ book.urls.api }}`.
 - `enableNetwork` Whether or not to establish a socket connection with the network for real time communication. If `false` you will not be able to listen for broadcasts. Defaults to `true`.
 
 

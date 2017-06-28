@@ -88,10 +88,10 @@ The authentication response payload is a JSON object containing the following pr
 
 Here is an example response payload:
 
-```json
+<pre><code>
 {
   "api": {
-    "host": "https://api.goexp.io"
+    "host": "{{ book.urls.api }}"
   },
   "network": {
     "host": "https://network27.goexp.io"
@@ -108,4 +108,4 @@ Here is an example response payload:
   "restrictedToken": "jE0NjExMDE2NTgsImV4c"
 }
 
-```
+</code></pre>
