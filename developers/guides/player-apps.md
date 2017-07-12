@@ -21,6 +21,7 @@ as a full angular user interface. Here are the important concepts:
 - Many apps can be playing simultaneously.
 - Apps can launch other apps, and manage and interact with other apps.
 - Apps have access to a running instance of the Player App SDK which includes the Javascript SDK.
+- config: {{ book.urls.urlFoo }}
 
 
 # Player App Lifecycle

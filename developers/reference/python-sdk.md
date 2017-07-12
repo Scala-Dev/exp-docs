@@ -24,7 +24,7 @@ Starts and returns an sdk instance. Can be called multiple times to start multip
 - `secret=None` The device secret. Required device credential unless `allow_pairing` is `True`.
 - `api_key=None` The consumer app api key. Required consumer app credential.
 - `allow_pairing=False` Whether to allow authentication to fallback to pairing mode. If `True`, invalid or empty device - credentials will start the sdk in pairing mode.
-- `host=https://api.goexp.io` The api host to authenticate with.
+- `host={{ book.urls.api }}` The api host to authenticate with.
 - `enable_network=True` Whether or not to establish a socket connection with the EXP. If `False`, you will not be - able to listen for broadcasts.
 
 ```python

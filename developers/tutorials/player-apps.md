@@ -141,7 +141,7 @@ From the Schedule tab, add a new day plan that runs our app at all times of the 
 
 Now, we have an experience with our app included and scheduled to run. The last step is assigning a device to show whatever is
 scheduled to be running right now. If you don't already have a player set up and added in EXP, do so now by adding a new device
-from the Devices tab of the experience and entering the pairing code from <a href="https://player.goexp.io" target="blank">player.goexp.io</a>. If you
+from the Devices tab of the experience and entering the pairing code from <a href="{{ book.urls.player }}" target="blank">{{ book.urls.player }}</a>. If you
 already have a player set up, add that to the experience instead.
 
 As soon as the device is added we should see the player showing something like:

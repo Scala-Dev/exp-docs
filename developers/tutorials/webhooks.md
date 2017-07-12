@@ -16,8 +16,8 @@ The definition of Web Hooks can be formulated as "user-defined HTTP(S) callbacks
 
 To successfully setup this webhook example we need the following pieces in place:
 
-1. A IFTTT (https://ifttt.com) Account. You can sign up for free.
-2. A EXP account. (https://goexp.io). You can sing up for a demo account.
+1. An IFTTT (https://ifttt.com) Account. You can sign up for free.
+2. An EXP account. ({{ book.urls.ui }}). You can sing up for a demo account.
 3. One EXP player running on a device. Please refer to the Tutorials on how to set this up.
 4. Google account for youtube.
 

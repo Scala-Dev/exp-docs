@@ -20,15 +20,15 @@ These are the instructions for making a player which doesn't need to be paired, 
 
 3. Add the uuid and secret to the query parameters OR hash of the player URL and use this as a web clip in Enterprise. e.g.
 
-  ```
-  https://player.goexp.io/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
-  ```
+  <pre><code>
+  {{ book.urls.player }}/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
+  </code></pre>
 
   or
 
-  ```
-  https://player.goexp.io/?uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
-  ```
+  <pre><code>
+  {{ book.urls.player }}/?uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
+  </code></pre>
 
 # Creating a Planned Player URL (Fixed Experience or App)
 
@@ -36,9 +36,9 @@ In addition to making a URL that points to a specific player, it is possible to 
 
 Start with the URL created above pointing to a device in an experience:
 
-  ```
-  https://player.goexp.io/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
-  ```
+  <pre><code>
+  {{ book.urls.player }}/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0
+  </code></pre>
 
 Then steal the experience uuid and app key from the URL of the app config page.
 
@@ -47,9 +47,9 @@ Then steal the experience uuid and app key from the URL of the app config page.
 
 Add the experience uuid and app key as query params to the existing URL (it will now have four query parameters: `uuid` and `secret` which correspond to the device, and the new `experience` and `key`). The result will look like:
 
-  ```
-  https://player.goexp.io/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0&experience=defa3531-3db2-4a3a-84e7-367328ad6ac4&key=56632b28-28de-471a-a92f-9f0806af184b
-  ```
+  <pre><code>
+  {{ book.urls.player }}/#uuid=4f5c8b9f-90e3-41cc-b175-4f5fff4164e5&secret=30ba5f95fe4159fd1cc6dc4626ac69c38da87374b7f0b3257ee36ab29c79f3d3823607c0&experience=defa3531-3db2-4a3a-84e7-367328ad6ac4&key=56632b28-28de-471a-a92f-9f0806af184b
+  </code></pre>
 
 When specifying the experience and key parameters the device will ignore its schedule and play that specific app 24/7.
 

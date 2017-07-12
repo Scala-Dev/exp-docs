@@ -19,5 +19,12 @@
   },
   "styles": {
     "website": "styles/website.css"
+  },
+  "variables": {
+    "urls": {
+      "api": "https://eagle.goexp.io/api",
+      "player": "https://eagle.goexp.io/player",
+      "ui": "https://eagle.goexp.io"
+    }
   }
 }
