@@ -32,12 +32,12 @@ Before we can hook up **Youtube** to **EXP** using **IFTTT** we need to define a
 ## Setup Web Hook
 
 1. Login to **EXP**.
-2. Select you organization in the right top corner and choose **"Current Organization"**.
+2. Select you organization in the right top corner and choose **Current Organization**.
 3. Select **"Broadcast Web Hooks"**.
 4. In the right top corner you can create a new **Web Hook**.
-5. Enter a valid name for the **web Hook**.
-6. Enter for **event name** **"fling"**.
-7. Enter for **channel name** **"organization"**, this will fling content to all players in the organization. You can also select a individual player by using **UUID**, or select **location/zone**, or select **experience**.
+5. Enter a valid name for the **Web Hook**.
+6. Enter for **Event Name** **"fling"**.
+7. Enter for **Channel Name** **"organization"**, this will fling content to all players in the organization. You can also select a individual player by using **UUID**, or select **location/zone**, or select **experience**.
 8. When you have saved the **Web Hook**, find it in the list and open the **details**.
 9. Copy the Web Hook **URL** that we need in our **IFTTT** setup.
 
@@ -74,3 +74,43 @@ Before we can hook up **Youtube** to **EXP** using **IFTTT** we need to define a
 # Recap
 
 Great now you got your fist **Web Hook** setup running. As you have seen creation of a **Web Hooks** in **EXP** is a relative easy task. Using Tools like **IFTTT** helps you bind 3rd party **web apps** to EXP.
+
+# Special Settings
+
+A **EXP player** can also be configured using **Consumer Credentials**. In this case the setup needs to be slightly modified:
+
+## Setup Consumer APP
+
+1. Login to **EXP**.
+2. Select you organization in the right top corner and choose **Current Organization**.
+3. Select **Consumer Apps**.
+4. Create a App by adding a **Consumer App** Name.
+5. When Created copy the **UUID** and the **apiKey**. 
+  
+![Setup IFTTT](/images/webhook/webhook5.png "Setup IFTTT")  
+  
+## Player URL
+
+Modify the player URL as followed: 
+https://eagle.goexp.io/player?UUID=uuidValue&apiKey=apiKeyValue
+
+## Web hook Settings 
+
+1. Login to **EXP**.
+2. Select you organization in the right top corner and choose **Current Organization**.
+3. Select **Broadcast Web Hooks**.
+4. Next to the settings already done in the tutorial above we need to select **Broadcast on consumer channel**.
+
+![Setup IFTTT](/images/webhook/webhook3.png "Setup IFTTT")
+
+## Experiance settings
+
+1. Login to **EXP**.
+2. Select **Experiences** in the left menu.
+3. Open the **Experience** that is used.
+4. Open the **Settings** option.
+5. The option **Disable Background Apps** needs to be set to **"False"**. If enabled the **Web Hook** signal will not reach the experience.
+
+![Setup IFTTT](/images/webhook/webhook4.png "Setup IFTTT")
+
+Now the **Web Hook** should work using **Consumer App**.
