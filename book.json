@@ -1,0 +1,30 @@
+{
+  "gitbook": "3.2.2",
+  "title": "EXP Docs",
+  "plugins": ["prism", "-highlight", "github"],
+  "pluginsConfig": {
+    "fontsettings": {
+      "theme": "night",
+      "family": "sans",
+      "size": 2
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-tomorrow.css"
+      ]
+    },
+    "github": {
+      "url": "https://github.com/ScalaInc/exp-docs/"
+    }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "variables": {
+    "urls": {
+      "api": "https://eagle.goexp.io/api",
+      "player": "https://eagle.goexp.io/player",
+      "ui": "https://eagle.goexp.io"
+    }
+  }
+}

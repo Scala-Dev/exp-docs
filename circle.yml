@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 6.10.3
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  services:
+    - docker
+dependencies:
+  override:
+    - echo
+compile:
+  override:
+    - /bin/bash ./circle.sh
+test:
+  override:
+    - echo
