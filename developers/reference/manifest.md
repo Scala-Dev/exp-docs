@@ -441,13 +441,16 @@ additional config parameter supplied called `options` that lists the possible va
 ```
 
 ### configType: app
-Allows the user to select one or more apps from the current experience or import apps from their content tree.
+Creates a selector that allows the user to specify an app in one of four ways:
 
-Also allows the user to choose or upload content. The stored data is the `config` object of the [app launch options](/developers/reference/player-app-sdk.md#app-launch-options) available at `exp.app.config[<path>]` during player app runtime.
+* use existing content such as an image or video which will be automatically wrapped in an app
+* use app in experience
+* upload content to be automatically wrapped in an app
+* upload app
 
 If you only want the user to be able to set one piece of content, use this object but set `multiItem` to `false`.
 
-Can be restricted to certain types of content, along the same lines as the `content` config type.
+Can be restricted to certain types of content, along the same lines as the [content config type](#configtype-content).
 
 ```json
 {
