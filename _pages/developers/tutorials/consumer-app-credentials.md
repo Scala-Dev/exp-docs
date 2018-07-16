@@ -59,3 +59,7 @@ https://player.goexp.io/#uuid=7871d45b-9ce3-49be-ab98-8739dfa84693&apiKey=f305a3
 
 This URL, together with the query parameters specifying an experience and app, will play an EXP player app. For more about player urls see the
 [Player URLs]({{site.baseurl}}/developers/tutorials/player-urls) guide and [Player App SDK reference]({{site.baseurl}}/developers/reference/player-app-sdk#url-parameters).
+
+
+## Pointing at an Experience
+Consumer apps are not tied to any paticular experience in EXP, an experience is specified in the URL `?experience=[uuid]`. This means that ```getCurrentExperience()``` will return null. To get the experience specified in the url paramters you can use `exp.getExperience(exp.params.experience)`.
