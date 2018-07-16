@@ -59,3 +59,7 @@ of your consumer app and then enter them in the query string of a url to a playe
 
 This URL, together with the query parameters specifying an experience and app, will play an EXP player app. For more about player urls see the
 [Player URLs](/developers/tutorials/player-urls.md) guide and [Player App SDK reference](/developers/reference/player-app-sdk.md#url-parameters).
+
+
+## Pointing at an Experience
+Consumer apps are not tied to any paticular experience in EXP, an experience is specified in the URL `?experience=[uuid]`. This means that ```getCurrentExperience()``` will return null. To get the experience specified in the url paramters you can use `exp.getExperience(exp.params.experience)`.
