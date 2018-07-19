@@ -85,16 +85,16 @@ A **EXP player** can also be configured using **Consumer Credentials**. In this 
 2. Select you organization in the right top corner and choose **Current Organization**.
 3. Select **Consumer Apps**.
 4. Create a App by adding a **Consumer App** Name.
-5. When Created copy the **UUID** and the **apiKey**. 
-  
-![Setup IFTTT](/images/webhook/webhook5.png "Setup IFTTT")  
-  
+5. When Created copy the **UUID** and the **apiKey**.
+
+![Setup IFTTT](/images/webhook/webhook5.png "Setup IFTTT")
+
 ## Player URL
 
-Modify the player URL as followed: 
-https://eagle.goexp.io/player?UUID=uuidValue&apiKey=apiKeyValue
+Modify the player URL as followed:
+({{ book.urls.player }})?UUID=uuidValue&apiKey=apiKeyValue
 
-## Web hook Settings 
+## Web hook Settings
 
 1. Login to **EXP**.
 2. Select you organization in the right top corner and choose **Current Organization**.
