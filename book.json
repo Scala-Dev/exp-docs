@@ -22,9 +22,9 @@
   },
   "variables": {
     "urls": {
-      "api": "https://eagle.goexp.io/api",
-      "player": "https://eagle.goexp.io/player",
-      "ui": "https://eagle.goexp.io"
+      "api": "https://sandbox.goexp.io/api",
+      "player": "https://sandbox.goexp.io/player",
+      "ui": "https://sandbox.goexp.io"
     }
   }
 }
